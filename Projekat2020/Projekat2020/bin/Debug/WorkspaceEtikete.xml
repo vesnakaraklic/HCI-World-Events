@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfEtiketa xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Etiketa>
+    <Id>1</Id>
+    <Boja>#FF000000</Boja>
+    <Opis>Crna etiketa.</Opis>
+  </Etiketa>
+  <Etiketa>
+    <Id>2</Id>
+    <Boja>#FF8B008B</Boja>
+    <Opis>Ljubicasta etiketa.</Opis>
+  </Etiketa>
+  <Etiketa>
+    <Id>13</Id>
+    <Boja>#FF1E90FF</Boja>
+    <Opis>Plava etiketa.</Opis>
+  </Etiketa>
+  <Etiketa>
+    <Id>4</Id>
+    <Boja>#FFDC143C</Boja>
+    <Opis>Crvena etiketa.</Opis>
+  </Etiketa>
+  <Etiketa>
+    <Id>5</Id>
+    <Boja>#FFFF8C00</Boja>
+    <Opis>Narandzasta etiketa.</Opis>
+  </Etiketa>
+  <Etiketa>
+    <Id>6</Id>
+    <Boja>#FF008000</Boja>
+    <Opis>Zelena etiketa.</Opis>
+  </Etiketa>
+  <Etiketa>
+    <Id>7</Id>
+    <Boja>#FFFFFF00</Boja>
+    <Opis>Zuta etiketa.</Opis>
+  </Etiketa>
+</ArrayOfEtiketa>

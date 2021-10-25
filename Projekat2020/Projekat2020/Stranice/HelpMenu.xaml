@@ -1,0 +1,35 @@
+﻿<Page x:Class="Projekat2020.Stranice.HelpMenu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat2020.Stranice"
+      mc:Ignorable="d" 
+      d:DesignHeight="310" d:DesignWidth="430"
+      Title="HelpMenu">
+    <ScrollViewer Height="300" VerticalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Vertical">
+            <TextBlock Style="{StaticResource ModalText}" Margin="10" Width="400" MaxHeight="270">Ukoliko zelite da pregledate listu svih dogadjaja pritisnite tasterom misa na dugme Dogadjaj. Pomocu strelica na levo i desno mozete se kretati kroz listu.
+                Ako zelite da dodate novi Dogadjaj pritisnite tasterom misa na + u desnom gornjem uglu, i otvorice vam se forma za dodavanje novog dogaddjaja. Kada popunite sva obavezna polja, klikite tasterom
+                misa na dugme Sacuvaj, ili ukoliko zelite da izadjete kliknite tasterom misa na dugme Odustani. 
+            </TextBlock>
+            <TextBlock Style="{StaticResource ModalText}" Margin="10" Width="400" MaxHeight="270">Ukoliko zelite da pregledate listu svih etiketa pritisnite tasterom misa na dugme Etiketa.Pomocu strelica na levo i desno mozete se kretati kroz listu.
+                Ako zelite da dodate novu etiketu pritisnite tasterom misa na + u desnom gornjem uglu, i otvorice vam se forma za dodavanje nove etikete. Kada popunite sva obavezna polja, klikite tasterom
+                misa na dugme Sacuvaj, ili ukoliko zelite da izadjete kliknite tasterom misa na dugme Odustani.
+            </TextBlock>
+            <TextBlock Style="{StaticResource ModalText}" Margin="10" Width="400" MaxHeight="270">Ukoliko zelite da pregledate listu svih tipova pritisnite tasterom misa na dugme Tip. Pomocu strelica na levo i desno mozete se kretati kroz listu.
+                Ako zelite da dodate novi tip pritisnite tasterom misa na + u desnom gornjem uglu, i otvorice vam se forma za dodavanje novog tipa. Kada popunite sva obavezna polja, klikite tasterom
+                misa na dugme Sacuvaj, ili ukoliko zelite da izadjete kliknite tasterom misa na dugme Odustani.
+            </TextBlock>
+            <TextBlock Style="{StaticResource ModalText}" Margin="10" Width="400" MaxHeight="270"> Ukoliko zelite da filtrirate dogadjaj to mozete uciniti unosenjem bilo kog atributa u polje za filtriranje, i odmah ce vam se prikazati svi dogadjaji sa tim atributom.
+            </TextBlock>
+            <TextBlock Style="{StaticResource ModalText}" Margin="10" Width="400" MaxHeight="270"> Ukoliko zelite da pretrazite dogadjaj po odredjenimm atributima, potrebno je a klikom misa na dugme Pretraga otvorite formu za popunjavanje, gde cete nakon unesenih vrednosti kliknuti tasterom misa na dugme Pretrazi.
+            </TextBlock>
+            <TextBlock Style="{StaticResource ModalText}" Margin="10" Width="400" MaxHeight="270">
+                Sa leve strane nalazi se menu bar, iz kojeg se takodje moze pristupiti listi svih dogadjaja, tipova i etiketa, njihovom dodavanju, pretrazi dogadjaja i Demo mood-u. Pritiskom tastera na dugme
+                Demo pokrenuce se primer automatskog dodavanja Etikete.
+            </TextBlock>
+        </StackPanel>
+    </ScrollViewer>
+
+</Page>

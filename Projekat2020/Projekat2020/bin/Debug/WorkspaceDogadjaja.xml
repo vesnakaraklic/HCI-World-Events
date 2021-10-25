@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDogadjaj xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Dogadjaj>
+    <Id>4</Id>
+    <Naziv>BELEFT</Naziv>
+    <Opis>Beogradski letnji festival
+Međunarodni festival objedinjuje pozorište i ples, vizuelne umetnosti i muziku. Predstavlja inovativne umetničke programe na beogradskim trgovima i ulicama, pozorišnim i drugim dvoranama u gradu. Održava se u periodu jul-avgust. Organizator Centar beogradskih festivala CEBEF, Ilije Garašanina 24.</Opis>
+    <Tip>
+      <Id>2</Id>
+      <Naziv>Filmski</Naziv>
+      <Ikonica>C:\Users\vesna\Desktop\HCI2020\0-1629_party-event-30-icons-event-icon.jpg</Ikonica>
+      <Opis>Filmski tip.</Opis>
+    </Tip>
+    <Posecenost>1</Posecenost>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\belef.jpg</Ikonica>
+    <Humanitaran>Ne</Humanitaran>
+    <Drzava>Serbia</Drzava>
+    <Grad>Beograd</Grad>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-06-05T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-06-04T00:00:00</IstorijaDatuma>
+    <CenaTroskova>2000</CenaTroskova>
+    <NaredniDatum>2020-08-10T00:00:00</NaredniDatum>
+    <Etiketa>
+      <Id>7</Id>
+      <Boja>#FFFFFF00</Boja>
+      <Opis>Zuta etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>1</Id>
+      <Boja>#FF000000</Boja>
+      <Opis>Crna etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>5</Id>
+      <Boja>#FFFF8C00</Boja>
+      <Opis>Narandzasta etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>13</Id>
+      <Boja>#FF1E90FF</Boja>
+      <Opis>Plava etiketa.</Opis>
+    </Etiketa>
+  </Dogadjaj>
+  <Dogadjaj>
+    <Id>7</Id>
+    <Naziv>Melbourne</Naziv>
+    <Opis>Otvoreno prvenstvo Australije ili Australijan open (engl. Australian Open) je teniski turnir koji se održava svake godine i traje dve nedelje u januaru (u prošlosti se održavao u decembru). Hronološki je prvi grend slem turnir u godini. Održava se u Melburnu.</Opis>
+    <Tip>
+      <Id>3</Id>
+      <Naziv>Sportski</Naziv>
+      <Ikonica>C:\Users\vesna\Desktop\HCI2020\1458512.jpg</Ikonica>
+      <Opis>Sportski tip</Opis>
+    </Tip>
+    <Posecenost>3</Posecenost>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\melbourne.jpg</Ikonica>
+    <Humanitaran>Ne</Humanitaran>
+    <Drzava>Australia</Drzava>
+    <Grad>Sidney</Grad>
+    <CenaTroskova>100000</CenaTroskova>
+    <NaredniDatum>2020-09-23T00:00:00</NaredniDatum>
+    <Etiketa>
+      <Id>4</Id>
+      <Boja>#FFDC143C</Boja>
+      <Opis>Crvena etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>5</Id>
+      <Boja>#FFFF8C00</Boja>
+      <Opis>Narandzasta etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>7</Id>
+      <Boja>#FFFFFF00</Boja>
+      <Opis>Zuta etiketa.</Opis>
+    </Etiketa>
+  </Dogadjaj>
+  <Dogadjaj>
+    <Id>1</Id>
+    <Naziv>Most Fest</Naziv>
+    <Opis>Već dvadesetak godina, svakog jula Drinska regata i muzički festival “Most Fest” koji je njen praktično neodvojiv deo, graničnom gradu smeštenom na zapadu države donesu osveženje. Bajina Bašta osveži se turistički, kulturno, društveno i ekonomski.</Opis>
+    <Tip>
+      <Id>5</Id>
+      <Naziv>Muzicki</Naziv>
+      <Ikonica>C:\Users\vesna\Desktop\HCI2020\eventicons.jpg</Ikonica>
+      <Opis>Muzicki tip.</Opis>
+    </Tip>
+    <Posecenost>2</Posecenost>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\mfest.jpg</Ikonica>
+    <Humanitaran>Da</Humanitaran>
+    <Drzava>Serbia</Drzava>
+    <Grad>Bajina Basta</Grad>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-25T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-05-01T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-04-01T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-01T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-04T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-05T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-06T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-27T00:00:00</IstorijaDatuma>
+    <IstorijaDatuma xsi:type="xsd:dateTime">2020-03-26T00:00:00</IstorijaDatuma>
+    <CenaTroskova>2500</CenaTroskova>
+    <NaredniDatum>2020-06-22T00:00:00</NaredniDatum>
+    <Etiketa>
+      <Id>13</Id>
+      <Boja>#FF1E90FF</Boja>
+      <Opis>Plava etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>6</Id>
+      <Boja>#FF008000</Boja>
+      <Opis>Zelena etiketa.</Opis>
+    </Etiketa>
+  </Dogadjaj>
+  <Dogadjaj>
+    <Id>2</Id>
+    <Naziv>Exit festival</Naziv>
+    <Opis>EXIT 2.0 počinje novu eru! EXIT je višestruko nagrađivani muzički festival koji se održava na Petrovaradinskoj tvrđavi, Novi Sad, Srbija.
+Festival na svetskom nivou.</Opis>
+    <Tip>
+      <Id>5</Id>
+      <Naziv>Muzicki</Naziv>
+      <Ikonica>C:\Users\vesna\Desktop\HCI2020\eventicons.jpg</Ikonica>
+      <Opis>Muzicki tip.</Opis>
+    </Tip>
+    <Posecenost>3</Posecenost>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\exit.jpg</Ikonica>
+    <Humanitaran>Ne</Humanitaran>
+    <Drzava>Serbia</Drzava>
+    <Grad>Novi Sad</Grad>
+    <CenaTroskova>15000</CenaTroskova>
+    <NaredniDatum>2020-07-01T00:00:00</NaredniDatum>
+    <Etiketa>
+      <Id>2</Id>
+      <Boja>#FF8B008B</Boja>
+      <Opis>Ljubicasta etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>13</Id>
+      <Boja>#FF1E90FF</Boja>
+      <Opis>Plava etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>4</Id>
+      <Boja>#FFDC143C</Boja>
+      <Opis>Crvena etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>5</Id>
+      <Boja>#FFFF8C00</Boja>
+      <Opis>Narandzasta etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>6</Id>
+      <Boja>#FF008000</Boja>
+      <Opis>Zelena etiketa.</Opis>
+    </Etiketa>
+    <Etiketa>
+      <Id>7</Id>
+      <Boja>#FFFFFF00</Boja>
+      <Opis>Zuta etiketa.</Opis>
+    </Etiketa>
+  </Dogadjaj>
+</ArrayOfDogadjaj>

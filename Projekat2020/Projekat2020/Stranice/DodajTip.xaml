@@ -1,0 +1,109 @@
+﻿<Page x:Class="Projekat2020.Stranice.DodajTip"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:ValidationRule="clr-namespace:Projekat2020.Validacija"
+      xmlns:local="clr-namespace:Projekat2020.Stranice"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="430"
+      Title="DodajTip">
+
+    <StackPanel Height="350">
+        <Border Height="325" Background="{StaticResource clrLightBlue}" Padding="20 10 10 20">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel>
+                    <TextBlock x:Name="NazivStranice" Style="{StaticResource ModalHeading}" Grid.Column="0" Grid.Row="0" Text=" Novi Tip"></TextBlock>
+                    <TextBlock Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="0" Text="Polja oznacena sa * su obavezna."></TextBlock>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="7*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Margin="0,10,0,10"  Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="0" Text=" Id*:"></TextBlock>
+                        <TextBox Margin="10,10,10,10" FontFamily="Times New Roman" Foreground="{StaticResource clrDarkBlue100}" x:Name="TipID" Grid.Column="1" Grid.Row="0" FontSize="13">
+                            <Validation.ErrorTemplate>
+                                <ControlTemplate>
+                                    <Grid Grid.Row="1" Grid.Column="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition Height="15"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <AdornedElementPlaceholder Grid.Column="0" Grid.Row="0" x:Name="textBoxId"/>
+                                        <TextBlock FontFamily="Times New Roman" FontSize="12" Grid.Column="0" Grid.Row="1" Text="{Binding [0].ErrorContent}" Foreground="{StaticResource clrRed}"/>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Validation.ErrorTemplate>
+                            <Binding Path="TipId" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <ValidationRule:NumberValidationRule Id="TipId" Objekat="Tip"/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox>
+                        <Button x:Name="Help_ButtonIdTipa" Grid.Row="0" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonIdTipa_Click"/>
+                        <TextBlock Margin="0,10,0,10" Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="1" Text= " Naziv*:"></TextBlock>
+                        <TextBox Margin="10,10,10,10" FontFamily="Times New Roman" Foreground="{StaticResource clrDarkBlue100}" x:Name="TipNAZIV" Grid.Column="1" Grid.Row="1" FontSize="13">
+                            <Validation.ErrorTemplate>
+                                <ControlTemplate>
+                                    <Grid Grid.Row="1" Grid.Column="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition Height="15"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <AdornedElementPlaceholder Grid.Column="0" Grid.Row="0" x:Name="textBoxId"/>
+                                        <TextBlock FontFamily="Times New Roman" FontSize="12" Grid.Column="0" Grid.Row="1" Text="{Binding [0].ErrorContent}" Foreground="{StaticResource clrRed}"/>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Validation.ErrorTemplate>
+                            <Binding Path="TipNaziv" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <ValidationRule:StringValidationRule Id="TipNaziv" Objekat="Tip"/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox>
+                        <Button x:Name="Help_ButtonNazivTipa" Grid.Row="1" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonNazivTipa_Click"/>
+                        <TextBlock Margin="0,10,0,10" Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="2" Text=" Ikonica*:" />
+                        <Grid Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="35*"/>
+                                <ColumnDefinition Width="10*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image Width="100" Height="100" Grid.Column="0" x:Name="IkonicaTipaDogadjaja" />
+                            <Button Style="{StaticResource ListEditButton}" Click="Izaberi_slikuTipa" Grid.Column="1" FontSize="13" Margin="10,10,0,0" Width="30" HorizontalAlignment="Center" Content="..." Height="20" VerticalAlignment="Center" FontWeight="Bold">
+                                <Button.ToolTip>
+                                    <ToolTip>
+                                        <StackPanel>
+                                            <TextBlock> Odabir ikonice</TextBlock>
+                                        </StackPanel>
+                                    </ToolTip>
+                                </Button.ToolTip>
+                            </Button>
+                        </Grid>
+                        <Button x:Name="Help_ButtonIkonicaTipa" Grid.Row="2" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonIkonicaTipa_Click"/>
+                        <TextBlock Margin="0,10,0,10" Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="3" Text=" Opis:" />
+                        <TextBox Margin="10,10,10,10" FontFamily="Times New Roman" Foreground="{StaticResource clrDarkBlue100}" x:Name="TipOpis" Grid.Column="1" Grid.Row="3" FontSize="13" TextWrapping="Wrap" AcceptsReturn="True" MaxLines="4" VerticalScrollBarVisibility="Auto" AcceptsTab="True" />
+                        <Button x:Name="Help_ButtonOpisEtikete" Grid.Row="3" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonOpisEtikete_Click"/>
+                        <Button Margin="10,20,10,10" IsEnabled="False" Style="{StaticResource ListEditButton}" x:Name="SubmitButton" Grid.Row="4" Grid.Column="1" Content="Sacuvaj"  FontSize="13" Width="55" Height="25" HorizontalAlignment="Right" Click="DodajTip_Click"/>
+                        <Button Margin="10,20,10,10" Style="{StaticResource ModalCancelButton}" x:Name="IzadjiButton" Grid.Row="4" Grid.Column="0" Content="Odustani"  FontSize="13" Width="55" Height="25" HorizontalAlignment="Left" Click="IzadjiButton_Click"/>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </StackPanel>
+</Page>

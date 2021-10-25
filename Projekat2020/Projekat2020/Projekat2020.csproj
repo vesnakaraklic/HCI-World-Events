@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25E42EAB-744B-4C38-B30A-5E3C69BB87E5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projekat2020</RootNamespace>
+    <AssemblyName>Projekat2020</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.AvalonDock, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Aero, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Aero.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.Metro, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.Metro.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.AvalonDock.Themes.VS2010, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.AvalonDock.Themes.VS2010.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.8.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.8.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Modali\DropText.xaml.cs">
+      <DependentUpon>DropText.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modali\HelpModal.xaml.cs">
+      <DependentUpon>HelpModal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modali\YesNoModal.xaml.cs">
+      <DependentUpon>YesNoModal.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modeli\Dogadjaj.cs" />
+    <Compile Include="Modeli\DogadjajXY.cs" />
+    <Compile Include="Modeli\Etiketa.cs" />
+    <Compile Include="Modeli\Tip.cs" />
+    <Compile Include="Stranice\DodajDogadjaj.xaml.cs">
+      <DependentUpon>DodajDogadjaj.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\DodajEtiketu.xaml.cs">
+      <DependentUpon>DodajEtiketu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\DodajTip.xaml.cs">
+      <DependentUpon>DodajTip.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\HelpMenu.xaml.cs">
+      <DependentUpon>HelpMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\ListaDogadjaja.xaml.cs">
+      <DependentUpon>ListaDogadjaja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\ListaEtiketa.xaml.cs">
+      <DependentUpon>ListaEtiketa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\ListaTipova.xaml.cs">
+      <DependentUpon>ListaTipova.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\PocetnaStranica.xaml.cs">
+      <DependentUpon>PocetnaStranica.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\Pretraga.xaml.cs">
+      <DependentUpon>Pretraga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\PrikazDogadjaja.xaml.cs">
+      <DependentUpon>PrikazDogadjaja.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\PrikazDogadjajXY.xaml.cs">
+      <DependentUpon>PrikazDogadjajXY.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\PrikazEtikete.xaml.cs">
+      <DependentUpon>PrikazEtikete.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Stranice\PrikazTipa.xaml.cs">
+      <DependentUpon>PrikazTipa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Validacija\StringValidationRule.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Modali\DropText.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modali\HelpModal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modali\YesNoModal.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\DodajDogadjaj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\DodajEtiketu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\DodajTip.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\HelpMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\ListaDogadjaja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\ListaEtiketa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\ListaTipova.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\PocetnaStranica.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\Pretraga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\PrikazDogadjaja.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\PrikazDogadjajXY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\PrikazEtikete.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Stranice\PrikazTipa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resursi\mapa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resursi\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resursi\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resursi\filter.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfTip xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Tip>
+    <Id>2</Id>
+    <Naziv>Filmski</Naziv>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\0-1629_party-event-30-icons-event-icon.jpg</Ikonica>
+    <Opis>Filmski tip.</Opis>
+  </Tip>
+  <Tip>
+    <Id>3</Id>
+    <Naziv>Sportski</Naziv>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\1458512.jpg</Ikonica>
+    <Opis>Sportski tip</Opis>
+  </Tip>
+  <Tip>
+    <Id>1</Id>
+    <Naziv>Umetnicki</Naziv>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\eventicons.jpg</Ikonica>
+    <Opis>Umetnicki tip</Opis>
+  </Tip>
+  <Tip>
+    <Id>5</Id>
+    <Naziv>Muzicki</Naziv>
+    <Ikonica>C:\Users\vesna\Desktop\HCI2020\eventicons.jpg</Ikonica>
+    <Opis>Muzicki tip.</Opis>
+  </Tip>
+</ArrayOfTip>

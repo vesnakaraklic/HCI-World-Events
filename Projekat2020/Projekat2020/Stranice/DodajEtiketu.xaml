@@ -1,0 +1,71 @@
+﻿<Page x:Class="Projekat2020.Stranice.DodajEtiketu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:ValidationRule="clr-namespace:Projekat2020.Validacija"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projekat2020.Stranice"
+      mc:Ignorable="d" 
+      d:DesignHeight="300" d:DesignWidth="430"
+      Title="DodajEtiketu">
+
+    <StackPanel>
+        <Border Background="{StaticResource clrLightBlue}" Padding="20 5">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Height="240">
+                <StackPanel>
+                    <TextBlock x:Name="NazivStranice" Style="{StaticResource ModalHeading}" Grid.Column="0" Grid.Row="0" Text=" Nova Etiketa"/>
+                    <TextBlock Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="0" Text="Polja oznacena sa * su obavezna."></TextBlock>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="7*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="0" Margin="0,10,0,10" Text=" Id*:" />
+                        <TextBox FontFamily="Times New Roman" Foreground="{StaticResource clrDarkBlue100}" Name="EtiketaID" Grid.Column="1" Grid.Row="0" FontSize="13" Margin="10,10,10,10" x:FieldModifier="public">
+                            <Validation.ErrorTemplate>
+                                <ControlTemplate>
+                                    <Grid Grid.Row="1" Grid.Column="0">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition Height="15"/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="Auto"/>
+                                        </Grid.ColumnDefinitions>
+                                        <AdornedElementPlaceholder Grid.Column="0" Grid.Row="0" x:Name="textBoxId"/>
+                                        <TextBlock FontFamily="Times New Roman" FontSize="12" Grid.Column="0" Grid.Row="1" Text="{Binding [0].ErrorContent}" Foreground="{StaticResource clrRed}"/>
+                                    </Grid>
+                                </ControlTemplate>
+                            </Validation.ErrorTemplate>
+                            <Binding Path="EtiketaId" UpdateSourceTrigger="PropertyChanged">
+                                <Binding.ValidationRules>
+                                    <ValidationRule:NumberValidationRule Id="EtiketaId" Objekat="Etiketa"/>
+                                </Binding.ValidationRules>
+                            </Binding>
+                        </TextBox>
+                        <Button x:Name="Help_ButtonIdEtikete" Grid.Row="0" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonIdEtikete_Click"/>
+                        <TextBlock Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="1" Margin="0,10,0,10" Text= " Boja*:" />
+                        <xctk:ColorPicker Closed="EtiketaBoja_Closed" x:FieldModifier="public" FontFamily="Times New Roman" Foreground="{StaticResource clrDarkBlue100}" Name="EtiketaBoja" Grid.Column="1" Grid.Row="1" FontSize="13" Margin="10"/>
+                        <Button x:Name="Help_ButtonBojaEtikete" Grid.Row="1" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonBojaEtikete_Click"/>
+                        <TextBlock Style="{StaticResource ModalText}" Grid.Column="0" Grid.Row="2" Margin="0,10,0,10" Text=" Opis*:" />
+                        <TextBox FontFamily="Times New Roman" x:FieldModifier="public" Foreground="{StaticResource clrDarkBlue100}" Name="EtiketaOpis" Grid.Column="1" Grid.Row="2" FontSize="13" Margin="10,10,10,10" TextWrapping="Wrap" AcceptsReturn="True" MaxLines="5" VerticalScrollBarVisibility="Auto" AcceptsTab="True"/>
+                        <Button x:Name="Help_ButtonOpisEtikete" Grid.Row="2" Grid.Column="2" Content="?" HorizontalAlignment="Center" FontSize="12" Style="{StaticResource HelpButton}" Click="Help_ButtonOpisEtikete_Click"/>
+                        <TextBlock FontFamily="Times New Roman" Grid.Column="1" Grid.Row="3" FontSize="12" Foreground="Red" x:Name="EtiketaOpisGreske" />
+                        <Button Style="{StaticResource ListEditButton}" x:FieldModifier="public" IsEnabled="False" x:Name="SubmitButton" FontSize="13" Width="55" Height="25" Grid.Row="4" Grid.Column="1" VerticalAlignment="Bottom" Content="Sacuvaj" Margin="10 20 10 10" Click="DodajEtiketu_Click" HorizontalAlignment="Right" />
+                        <Button Style="{StaticResource ModalCancelButton}" x:Name="IzadjiButton" Grid.Row="13" Grid.Column="0" Content="Odustani"  FontSize="13" Width="55" HorizontalAlignment="Right" Margin="10 20 10 10" Height="25" Click="IzadjiButton_Click"/>
+                    </Grid>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+    </StackPanel>
+</Page>

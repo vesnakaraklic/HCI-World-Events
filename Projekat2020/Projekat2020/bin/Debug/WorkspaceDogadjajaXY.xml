@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDogadjajXY xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <DogadjajXY>
+    <Dogadjaj>
+      <Id>3</Id>
+      <Naziv>FEST</Naziv>
+      <Opis>MEĐUNARODNI FILMSKI FESTIVAL
+Festival podrazumeva predstavljanje filmskih ostvarenja najviših umetničkih vrednosti u svetskoj kinematografiji.</Opis>
+      <Tip>
+        <Id>2</Id>
+        <Naziv>Filmski</Naziv>
+        <Ikonica>C:\Users\vesna\Desktop\HCI2020\0-1629_party-event-30-icons-event-icon.jpg</Ikonica>
+        <Opis>Filmski tip.</Opis>
+      </Tip>
+      <Posecenost>1</Posecenost>
+      <Ikonica>C:\Users\vesna\Desktop\HCI2020\0-1629_party-event-30-icons-event-icon.jpg</Ikonica>
+      <Humanitaran>Da</Humanitaran>
+      <Drzava>Serbia</Drzava>
+      <Grad>Beograd</Grad>
+      <CenaTroskova>980</CenaTroskova>
+      <NaredniDatum>2021-02-11T00:00:00</NaredniDatum>
+      <Etiketa>
+        <Id>2</Id>
+        <Boja>#FF8B008B</Boja>
+        <Opis>Ljubicasta etiketa.</Opis>
+      </Etiketa>
+      <Etiketa>
+        <Id>1</Id>
+        <Boja>#FF000000</Boja>
+        <Opis>Crna etiketa.</Opis>
+      </Etiketa>
+      <Etiketa>
+        <Id>4</Id>
+        <Boja>#FFDC143C</Boja>
+        <Opis>Crvena etiketa.</Opis>
+      </Etiketa>
+    </Dogadjaj>
+    <X>63</X>
+    <Y>119</Y>
+  </DogadjajXY>
+</ArrayOfDogadjajXY>
